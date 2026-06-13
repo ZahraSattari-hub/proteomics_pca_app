@@ -23,7 +23,7 @@ getwd()
 
 df <- read_excel(
   "mer_proteins.xlsx",
-  sheet = 4
+  sheet = 1
 )
 
 sample_info <- df[,1:2]
