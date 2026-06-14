@@ -6,6 +6,6 @@ Explore different principal component combinations. <br/>
 Identify proteins contributing most strongly to each principal component. <br/>
 Compare treatment groups and investigate potential drivers of observed clustering. <br/>
 
-By transforming a static publication figure into an exploratory interface, the application provides greater transparency and facilitates deeper investigation of the proteomic data. 
+By transforming a static publication figure into an exploratory interface, the application provides greater transparency and facilitates deeper investigation of the proteomic data. <br/>
 Have a look at the application here:
 http://127.0.0.1:6926
