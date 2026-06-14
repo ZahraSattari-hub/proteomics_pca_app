@@ -2,6 +2,7 @@ This Shiny application extends the static principal component analysis (PCA) pre
 
 The original publication figure provides a visual overview of separation between control and treated samples. While effective for communicating the main result, static figures do not allow investigation of the underlying drivers of this separation.
 
+The interactive application enables users to: <br/>
 Explore different principal component combinations. <br/>
 Identify proteins contributing most strongly to each principal component. <br/>
 Compare treatment groups and investigate potential drivers of observed clustering. <br/>
