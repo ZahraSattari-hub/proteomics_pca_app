@@ -1,10 +1,3 @@
-if (!require("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
-
-BiocManager::install("limma")
-library(limma)
-
-
 
 library(shiny)
 library(plotly)
@@ -16,10 +9,8 @@ library(limma)
 
 
 # =====================================================
-# LOAD DATA
+# PREPARE & LOAD DATA
 # =====================================================
-
-getwd()
 
 df <- read_excel(
   "mer_proteins.xlsx",
@@ -30,21 +21,13 @@ sample_info <- df[,1:2]
 
 protein_data0 <- df[,3:ncol(df)]
 
-
-
 col2remove <- which(apply(protein_data0, 2, sd) == 0)
-View(col2remove)
 
 # remove cols with no variation
-
 protein_data <- protein_data0[, -col2remove]
-View(protein_data)
-
 
 # log transform
 protein_data <- log1p(protein_data)
-View(protein_data)
-
 
 sample_info$treatment <- factor(
   sample_info$treatment,
